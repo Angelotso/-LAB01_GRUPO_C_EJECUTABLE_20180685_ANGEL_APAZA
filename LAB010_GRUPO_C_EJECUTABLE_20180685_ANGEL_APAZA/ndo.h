@@ -2,18 +2,20 @@
 #define _NODO_H_
 
 #include <iostream>
-template <class T>
+#include<vector>
+#include<stdlib.h>
+using namespace std;
 class Nodo
 {
     public:
-        Nodo();
-        Nodo(T);
-        ~Nodo();
- 
+        int data; 
         Nodo *sig;
-        T data;
- 
-        void eliminar();
-        void Imprimir();
+        Nodo();
+        ~Nodo();
 };
+Nodo::Nodo()
+{
+    sig=NULL;
+}
+Nodo::~Nodo(){}
 #endif
