@@ -7,17 +7,15 @@
 using namespace std;
 class Nodo
 {
-
     public:
-        int data;
-        Nodo *siguiente;
-        Nodo(int dat,Nodo *sig){
-            data=dat;
-            siguiente=sig;
-        }
-        Nodo *getsig(){return(siguiente);};
-        int getdata(){return(data);};
+        int data; 
+        Nodo *sig;
+        Nodo();
         ~Nodo();
 };
+Nodo::Nodo()
+{
+    sig=NULL;
+}
 Nodo::~Nodo(){}
 #endif
